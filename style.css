@@ -1,0 +1,352 @@
+/*
+Theme Name: PixelSquare
+Theme URI: http://koyocreative.com/projects/pixelsquare
+Author: Aleksandar Kojovic
+Description: A Theme for downloading freebies for web designers
+Version: 4.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pixelsquare
+*/
+body {
+	background: #3b414a;
+	font-weight: 500;
+}
+a:hover {
+	transition: all .25s ease-in-out;
+}
+/* HEADER  */
+.main-header {
+	background-color: #f74545;
+}
+#main-logo {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #f74545;
+}
+
+a{
+	text-decoration: none;
+	color: #2b3038;
+	font-weight: 500;
+}
+a:hover {
+	text-decoration: none;
+	color: #f74545 !important;
+}
+.page-ctrl {
+	margin-top: 58px;
+	margin-bottom: 58px;
+}
+
+/* BUTTONS */
+.download-btn {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #f74545;
+	color: #fff !important;
+	padding: 20px 50px;
+	border-radius: 5px;
+
+	transition: all .16s ease-in-out;
+}
+.download-btn i {
+	margin-right: 5px;
+}
+.download-btn:hover {
+	background: #2b3038;
+	color: #f74545;
+
+	transition: all .16s ease-in-out;
+
+}
+a.download-btn:hover {
+	text-decoration: none !important;
+}
+
+/* SEARCH FORM */
+.search-form {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+input.search-field{
+	background:  #2b3038;
+	padding: 10px 15px;
+	padding-right: 40px;
+	border: 0px;
+	color: #fff;
+	border-radius: 5px;
+
+	-webkit-transition: all .25s cubic-bezier(0.585, 0, 0.430, 0.995); /* older webkit */
+	-webkit-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	-moz-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	-o-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995); /* custom */
+	
+	width: 60%;
+}
+input.search-field:focus {
+	-webkit-transition: all .25s cubic-bezier(0.585, 0, 0.430, 0.995); /* older webkit */
+	-webkit-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	-moz-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	-o-transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995);
+	transition: all .25s cubic-bezier(0.585, -0.020, 0.430, 0.995); /* custom */
+	width: 100%;
+}
+button.search-submit {
+	right: 20px;
+	top: 0;
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 0px;
+	background: transparent;
+	color: #f74545;
+}
+@media only screen and (max-width: 1206px) {
+	input.search-field{
+		width: 100%;
+	}
+} 
+
+/* Navigation */
+.main-navigation {
+	background: #2b3038;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #484e56;
+	text-align: center;
+}
+ul.menu {
+	margin-bottom: 0 !important;
+}
+ul.menu li {
+	list-style: none;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ul.menu li a {
+	font-size: 22px;
+	color: #484e56;
+	font-weight: 400;
+}
+ul.menu li a:hover {
+	color: #f74545;
+}
+@media only screen and (max-width: 992px) {
+	#main-logo img {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	#main-logo img {
+		width: 220px;
+	}
+}
+
+/* SUB HEADER*/
+.sub-header {
+	margin-top: 58px;
+	margin-bottom: 58px;
+	color: #2b3038;
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.main-navigation {
+		display: none;
+	}
+}
+
+/* SUB NAVIGATION */
+.sub-header .menu ul {
+	padding-left: 0;
+		list-style: none;
+}
+.sub-header .menu ul a {
+	color: #2b3038;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 2.5;
+	list-style: none;
+}
+.sub-header ul.menu a:hover {
+	color: #f74545;
+}
+@media only screen and (max-width: 1200px) {
+	.sub-header ul {
+		display: none;
+	}
+}
+
+/* INDEX ARTICLE */
+.freebie {
+	background: pink;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+.freebie-overlay {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(247,69,69,.9);
+	color: #fff;
+	text-align: center;
+	transition: all .25s ease-in-out;
+}
+.freebie-overlay a {
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+}
+.freebie-overlay a:hover {
+	color: #2b3038 !important;
+}
+.freebie:hover > .freebie-overlay {
+	opacity: 1;
+	visibility: visible;
+	transition: all .25s ease-in-out;
+}
+.freebie-overlay-meta a{
+	font-size: 16px;
+}
+.freebie-overlay-meta {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.entry-featured {
+	overflow: hidden;
+}
+.freebie-bg {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.freebie-bg img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+/* SINGLE ARTICLE */
+.freebie-single {
+	color: #fff;
+}
+.freebie-single a{
+	text-decoration: none;
+	color: #f74545;
+	font-weight: 500;
+
+}
+.freebie-single a:hover {
+	text-decoration: none;
+	color: #f74545 !important;
+	text-decoration: underline;
+}
+.freebie-single h1,.freebie-single h2,.freebie-single h3,.freebie-single h4,.freebie-single h5,.freebie-single h6 {
+	color: #fff;
+}
+
+/* ENTRY SUB */
+.entry-sub {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+@media only screen and (max-width: 840px) {
+	.entry-sub {
+		display: flex;
+		justify-content: start;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+}
+
+/* ENTRY FEATURED*/
+.entry-featured {
+	margin-bottom: 20px;
+}
+
+/* PAGE CTRL */
+.page-ctrl a{
+	font-size: 20px;
+	line-height: 2;
+}
+.page-nav-left {
+	text-align: left;
+}
+.page-nav-right {
+	text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.page-nav-left {
+	text-align: center !important;
+	}
+	.page-nav-right {
+		text-align: center !important;
+	}
+
+}
+
+/* FOOTER */
+.main-footer  {
+	background: #2b3038;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #484e56;
+}
+.footer-underline  {
+	height: 20px;
+	background: #f74545;
+}
+
+.page-header .page-title {
+	margin-bottom: 50px;
+	color: #fff;
+}
+.page-header .page-title span {
+	color: #f74545;
+}
+
+
+/* FOOTER FIX */
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 103px;
+}
+.footer-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 103px;
+}
